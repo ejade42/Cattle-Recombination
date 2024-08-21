@@ -1,0 +1,36 @@
+DISTANCE MEASURE - can be "distance_next_centre" (centre), "distance_lowerlimit_nextupperlimit" (max), "distance_upperlimit_nextlowerlimit" (min):
+distance_next_centre
+DOUBLE CROSSOVER THRESHOLD - in cM:
+3
+MAX DOUBLE CROSSOVERS BELOW THRESHOLD PER CHROMOSOME:
+0
+PER-CHR INFORMATIVE MARKER FILTERING:
+TRUE
+LOWER PROPORTION INFORMATIVE MARKERS TO FILTER:
+0.025
+MIN KEPT CHROMOSOMES:
+20
+MIN HALF-SIBS IN FAMILY:
+10
+MIN SIRE UNIQUE AGES:
+0
+MAX TOTAL RECOMBINATIONS TYPE: - can be "proportion", "number" - DON'T INLCUDE QUOTES
+number
+MAX TOTAL RECOMBINATIONS: (either the bottom X% of rows to keep, or the count to exclude above)
+70
+PATH TO "COWS" DIRECTORY: deprecated
+
+MAX RECOMBINATION RATE:
+2
+DISCRETE SIRE BREED THRESHOLDS: below this will be labelled as Holstein, above 1-this will be labelled as Jersey
+0.25
+MIN SIRE BREEDING WINDOW: - in days
+0
+SIRE DISCRETE YEARS METHOD - "round" vs "floor" - DON'T INCLUDE QUOTES
+round
+MIN CHILDREN TO COUNT A DISCRETE AGE/YEAR AS A "BREEDING SEASON"
+0
+MIN YEARS WITH ENOUGH CHILDREN TO BE A "BREEDING SEASON":
+0
+DO CHROMOSOME FILTERING (takes a long time):
+TRUE
