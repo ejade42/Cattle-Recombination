@@ -4,7 +4,7 @@
 #SBATCH --mem=4000                                                # Memory/CPU (in MB)
 #SBATCH --cpus-per-task=4                                         # Number of threads (level of paralellism)
 #SBATCH --partition=milan
-#SBATCH --mail-user=ejad042@aucklanduni.ac.nz
+#SBATCH --mail-user=email@domain.com
 #SBATCH --mail-type=END,FAIL
 #SBATCH --output=slurm_output/slurm-%j-HeritabilityMethodsSimulation.out
 
