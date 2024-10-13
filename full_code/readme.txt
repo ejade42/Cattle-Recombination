@@ -5,7 +5,7 @@ However, the input directory does not contain all of the required files, because
 Assuming access to the input files, the analysis could be re-run as follows:
 
 What you should have to start with:
-- A bunch of .txt bash/slurm scripts in the main directory (plus the 0)settings file)
+- A bunch of .sh bash/slurm scripts in the main directory (plus the 0)settings file)
 - An input directory containing the key initial data and software files
 - A scripts directory containing a bunch of scripts, mostly R
 
@@ -69,6 +69,6 @@ tidyr     1.3.0
 For the "input/gene_names_pos_forR.csv" file, the creator (JS) gave the following method:
 "I downloaded the information about each gene from this webpage: 
 https://www.ncbi.nlm.nih.gov/gene/?term=ARS-UCD1.2/bosTau9
-Clicked on”Send to” and chose “File". 
+Clicked on "Send to" and chose "File". 
 This gave me a text file called gene_result.txt.
-Then I just opened it in excel (as tab delimited) deleted the 7th-10th column  and converted to csv (saved  "gene_names_pos_forR.csv") then I could read it easily into R."
+Then I just opened it in excel (as tab delimited) deleted the 7th-10th column  and converted to csv (saved  'gene_names_pos_forR.csv') then I could read it easily into R."
