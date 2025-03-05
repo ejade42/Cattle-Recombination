@@ -39,6 +39,7 @@ echo; echo; echo; echo; echo
 echo --------------------------------------------------------------------------
 echo \($(date +"%Y-%m-%d %T")\) WORKING ON: HERITABILITY ESTIMATION; echo
 Rscript scripts/graphs_heritability.r
+Rscript scripts/graphs_heritability_mcmcglmm.r
 echo --------------------------------------------------------------------------
 echo; echo; echo; echo; echo
 

@@ -28,8 +28,9 @@ However, the first one of each number must be run before the others can.
 So, you can simultaneously run:
 - 4)DredgeModels
 - 5.0)HeritabilityMethodsSimulation
-    - Once this is finished, you can simultaneously run 5.1, 5.2, and 5.3
+    - Once this is finished, you can simultaneously run 5.1, 5.2, 5.3, and 5.4.
     - Note that 5.3 will say it failed; that is because the "subsample" breed can't do filters above 365. As long as that got to 365 and the others finished, there is no error.
+    - 5.4 will take a very long time and a lot of resources. On my system, with a 501-fold array, it took about a week per instance. If you reduce the array size (decrease parallelisation) the time per instance will increase ~proportionally.
 - 6.0)GenomePartitioning
     - Once this is finished, you can run 6.1
     - Once 6.1 is finished, you can run 6.2 (to use the GWAS results to find nearby genes). This is the first script to make a file in the output directory.
@@ -41,7 +42,7 @@ Note that some output e.g. model estimates, P-values, and confidence intervals i
 
 
 IMPORTANT NOTE: 
-Some of the scripts (2, 5.1, 5.3, and 6.1) are slurm "Array" scripts, which run in parallel.
+Some of the scripts (2, 5.1, 5.3, 5.4, and 6.1) are slurm "Array" scripts, which run in parallel.
 The number of instances is specified by the #SBATCH --array= argument, which provides a range of numbers.
 Each number in this range, inclusive, will generate its own instance of the script.
 The instance number can be accessed from the $SLURM_ARRAY_TASK_ID variable.

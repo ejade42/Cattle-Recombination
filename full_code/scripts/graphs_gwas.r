@@ -1,7 +1,7 @@
 # Load in packages/functions
 start_time <- Sys.time()
 library(tidyverse)  ## v2.0.0
-library(topr)       ## v2.0.0
+library(topr)       ## v2.0.2
 library(egg)        ## v0.4.5
 source("scripts/functions.r")
 print_blank()

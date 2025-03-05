@@ -49,7 +49,7 @@ echo; echo; echo; echo; echo
 
 echo --------------------------------------------------------------------------
 echo \($(date +"%Y-%m-%d %T")\) WORKING ON: GWAS; echo
-Rscript scripts/graphs_gwas_new.r
+Rscript scripts/graphs_gwas.r
 echo --------------------------------------------------------------------------
 echo; echo;
 
