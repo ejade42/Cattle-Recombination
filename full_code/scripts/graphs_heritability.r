@@ -18,7 +18,7 @@ hibayes_jer$breed <- "(d) Jersey"
 
 
 hibayes <- rbind(hibayes_all, hibayes_sub, hibayes_hol, hibayes_jer)
-write.csv(hibayes, "files/heritability_analysis_combined.csv")
+write.csv(hibayes, "files/heritability_analysis_combined.csv", row.names = F)
 
 
 

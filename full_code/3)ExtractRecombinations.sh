@@ -20,8 +20,8 @@ echo \($(date +"%Y-%m-%d %T")\) start
 
 echo \($(date +"%Y-%m-%d %T")\) extracting max genetic distance per chromosome
 cd scripts
-chmod +x chromosome_total_distances.txt
-./chromosome_total_distances.txt
+chmod +x chromosome_total_distances.sh
+./chromosome_total_distances.sh
 cd ..
 echo \($(date +"%Y-%m-%d %T")\) max genetic distance per chromosome extracted
 

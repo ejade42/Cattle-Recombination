@@ -21,7 +21,7 @@ echo \($(date +"%Y-%m-%d %T")\) start; echo
 
 ## Extract data to bed - comment out once done (takes ages)
 echo \($(date +"%Y-%m-%d %T")\) extracting data 
-#plink --cow --vcf ../input/allgens_cows_recoded.vcf.gz --make-bed --out all_cows_00
+plink --cow --vcf ../input/allgens_cows_recoded.vcf.gz --make-bed --out all_cows_00
 echo \($(date +"%Y-%m-%d %T")\) data extracted; echo
 
 ## Update genetic distances; remove variants not in Shen linkage map and variants with missing ID (i.e. "."):

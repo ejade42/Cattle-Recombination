@@ -17,6 +17,8 @@
 echo \($(date +"%Y-%m-%d %T")\) start
 module load R/4.2.1-gimkl-2022a
 
+mkdir -p ./output
+
 
 ## Create list files for R
 echo \($(date +"%Y-%m-%d %T")\) creating list files for R

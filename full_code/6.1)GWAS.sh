@@ -37,12 +37,12 @@ plink --cow --bfile ../qc/all_cows_10 --keep ../files/sires_to_keep_$breed --rec
 for filter in 0 365
 do
 ## MEAN
-    ./gcta-1.94.1 --autosome-num 29 --bfile sires_$breed --keep recombinations_filter$filter"_mean.phen" --pheno recombinations_filter$filter"_mean.phen" --maf 0.01 --make-grm --out grm_mean_$breed 
-    ./gcta-1.94.1 --autosome-num 29 --bfile sires_$breed --keep recombinations_filter$filter"_mean.phen" --grm grm_mean_$breed --pheno recombinations_filter$filter"_mean.phen" --maf 0.01 --mlma --out GWAS_mean_filter_$filter"_breed_"$breed --thread-num 8
+    ./gcta-1.94.1 --autosome-num 29 --bfile sires_$breed --keep recombinations_filter$filter"_mean.phen" --pheno recombinations_filter$filter"_mean.phen" --maf 0.01 --make-grm --out grm_mean_$breed"_"$filter 
+    ./gcta-1.94.1 --autosome-num 29 --bfile sires_$breed --keep recombinations_filter$filter"_mean.phen" --grm grm_mean_$breed"_"$filter --pheno recombinations_filter$filter"_mean.phen" --maf 0.01 --mlma --out GWAS_mean_filter_$filter"_breed_"$breed --thread-num 8
 
     ## SLOPE
-    ./gcta-1.94.1 --autosome-num 29 --bfile sires_$breed --keep recombinations_filter$filter"_slope.phen" --pheno recombinations_filter$filter"_slope.phen" --maf 0.01 --make-grm --out grm_slope_$breed
-    ./gcta-1.94.1 --autosome-num 29 --bfile sires_$breed --keep recombinations_filter$filter"_slope.phen" --grm grm_slope_$breed --pheno recombinations_filter$filter"_slope.phen" --maf 0.01 --mlma --out GWAS_slope_filter_$filter"_breed_"$breed --thread-num 8
+    ./gcta-1.94.1 --autosome-num 29 --bfile sires_$breed --keep recombinations_filter$filter"_slope.phen" --pheno recombinations_filter$filter"_slope.phen" --maf 0.01 --make-grm --out grm_slope_$breed"_"$filter
+    ./gcta-1.94.1 --autosome-num 29 --bfile sires_$breed --keep recombinations_filter$filter"_slope.phen" --grm grm_slope_$breed"_"$filter --pheno recombinations_filter$filter"_slope.phen" --maf 0.01 --mlma --out GWAS_slope_filter_$filter"_breed_"$breed --thread-num 8
 done
 
 echo \($(date +"%Y-%m-%d %T")\) done
